@@ -3,7 +3,7 @@ const Hero = () => {
     <section className='w-full flex justify-center items-center h-[500px] relative overflow-hidden'>
       <div
         style={{
-          backgroundImage: 'url(/airplane.avif)',
+          backgroundImage: 'url(/wtech/airplane.avif)',
           filter: 'brightness(0.5)',
         }}
         className='absolute inset-0 bg-cover bg-center bg-no-repeat'

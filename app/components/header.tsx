@@ -15,7 +15,7 @@ const Header = () => {
     <div className='w-full flex justify-between items-center p-4'>
       <div>
         <Image
-          src='/wtechlogo.png'
+          src='/wtech/wtechlogo.png'
           alt='West Tech Logo'
           width={300}
           height={55}

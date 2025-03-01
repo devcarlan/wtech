@@ -7,7 +7,7 @@ const Services = () => {
       <div className='grid grid-cols-3 gap-4 justify-center px-4 mb-4'>
         {[
           {
-            imgSrc: '/cplane.png',
+            imgSrc: '/wtech/cplane.png',
             title: 'RECEIVE, SHIP, & CLEAR PACKAGES',
             description: `Shop online at your favorite sites and just ship your goods 
         to the following address: 1708 NW 82nd Ave Doral, FL 33126 USA (321) 
@@ -16,13 +16,13 @@ const Services = () => {
         plus any applicable duties. (St. Maarten: USD $5 per pound and USD $5 handling).`,
           },
           {
-            imgSrc: '/c-card.png',
+            imgSrc: '/wtech/c-card.png',
             title: 'USE OF CREDIT CARDS',
             description: `If you need us to, we can place your orders online using 
         our credit card for a fee of $10 (St. Maarten: USD $5) per order.`,
           },
           {
-            imgSrc: '/ctruck.png',
+            imgSrc: '/wtech/ctruck.png',
             title: 'PACKAGE DELIVERY',
             description: `If you have a busy schedule and you are not able to pick 
         up your packages at one of our office locations, we can deliver your 

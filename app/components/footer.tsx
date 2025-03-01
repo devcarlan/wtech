@@ -54,19 +54,19 @@ const Footer = () => {
             <Image
               width={40}
               height={40}
-              src='/visa.png'
+              src='/wtech/visa.png'
               alt='Visa Credit Card'
             />
             <Image
               width={40}
               height={40}
-              src='/master-card.png'
+              src='/wtech/master-card.png'
               alt='Master Card Credit Card'
             />
             <Image
               width={40}
               height={40}
-              src='/american.png'
+              src='/wtech/american.png'
               alt='American Express Credit Card'
             />
           </div>

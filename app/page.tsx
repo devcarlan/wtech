@@ -3,6 +3,7 @@ import FAQ from './components/faq'
 import Footer from './components/footer'
 import Hero from './components/hero'
 import Services from './components/services'
+import Ship from './components/ship'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Choose />
+        <Ship />
       </main>
     </div>
   )

@@ -1,3 +1,4 @@
+import Choose from './components/choose'
 import FAQ from './components/faq'
 import Footer from './components/footer'
 import Hero from './components/hero'
@@ -9,6 +10,7 @@ export default function Home() {
       <main className='flex-1'>
         <Hero />
         <Services />
+        <Choose />
       </main>
     </div>
   )

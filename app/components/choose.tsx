@@ -19,7 +19,7 @@ const Choose = () => {
               <Clock className='h-6 w-6 text-[#0A4590]' />
             </div>
             <h3 className='text-lg font-medium mb-2'>Timely Delivery</h3>
-            <p className='text-muted-foreground'>
+            <p>
               We understand the importance of your personal packages arriving on
               time, especially for special occasions.
             </p>
@@ -29,7 +29,7 @@ const Choose = () => {
               <Globe className='h-6 w-6 text-[#0A4590]' />
             </div>
             <h3 className='text-lg font-medium mb-2'>Global Network</h3>
-            <p className='text-muted-foreground'>
+            <p>
               Send personal packages to friends and family anywhere in the
               Caribbean and U.S with our extensive network.
             </p>
@@ -39,7 +39,7 @@ const Choose = () => {
               <Anchor className='h-6 w-6 text-[#0A4590]' />
             </div>
             <h3 className='text-lg font-medium mb-2'>Reliable Service</h3>
-            <p className='text-muted-foreground'>
+            <p>
               With years of experience, we provide dependable shipping services
               you can trust.
             </p>
@@ -49,7 +49,7 @@ const Choose = () => {
               <Phone className='h-6 w-6 text-[#0A4590]' />
             </div>
             <h3 className='text-lg font-medium mb-2'>Customer Support</h3>
-            <p className='text-muted-foreground'>
+            <p>
               Our dedicated team is always ready to assist you with any
               inquiries.
             </p>

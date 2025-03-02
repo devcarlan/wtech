@@ -12,7 +12,7 @@ const Header = () => {
       <div className='container max-w-full flex h-16 items-center py-2 px-4 md:px-6'>
         <Link href='/'>
           <Image
-            src='/wtechlogo.png'
+            src='/wtech/wtechlogo.png'
             alt='West Tech Logo'
             width={300}
             height={55}

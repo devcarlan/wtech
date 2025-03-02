@@ -8,7 +8,7 @@ const Services = () => {
           <h2 className='text-3xl font-bold tracking-tight text-[#0A4590]'>
             Our Services
           </h2>
-          <p className='text-muted-foreground mt-2'>
+          <p className='mt-2'>
             Comprehensive shipping solutions tailored to your personal needs.
           </p>
         </div>
@@ -35,7 +35,7 @@ const Services = () => {
               </h3>
             </div>
             <div className='p-6 pt-0'>
-              <p className='text-muted-foreground'>
+              <p>
                 Convenient pickup service directly from your home with flexible
                 scheduling options.
               </p>

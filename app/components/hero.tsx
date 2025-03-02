@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
           <div className='relative h-[300px] lg:h-[400px] rounded-lg overflow-hidden'>
             <Image
-              src='/delivery.avif'
+              src='/wtech/delivery.avif'
               alt='Shipping and logistics'
               fill
               className='object-cover'

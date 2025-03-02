@@ -9,7 +9,7 @@ const Contact = () => {
             <h2 className='text-3xl font-bold tracking-tight text-[#0A4590] mb-4'>
               Contact Us
             </h2>
-            <p className='text-muted-foreground mb-6'>
+            <p className='mb-6'>
               Have questions or need assistance? Our team is here to help you
               with all your shipping needs.
             </p>

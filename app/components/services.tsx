@@ -1,54 +1,61 @@
-import Image from 'next/image'
+import { Box, Ship, Truck } from 'lucide-react'
 
 const Services = () => {
   return (
-    <section className='w-full bg-white flex flex-col items-center text-black mt-6'>
-      <h2 className='text-3xl text-center mb-6'>Our Services</h2>
-      <div className='grid grid-cols-3 gap-4 justify-center px-4 mb-4'>
-        {[
-          {
-            imgSrc: '/wtech/cplane.png',
-            title: 'RECEIVE, SHIP, & CLEAR PACKAGES',
-            description: `Shop online at your favorite sites and just ship your goods 
-        to the following address: 1708 NW 82nd Ave Doral, FL 33126 USA (321) 
-        300-6468. We will then ship directly to you and clear your package 
-        through Customs. Our shipping fee is $10 per pound, handling fee is $5, 
-        plus any applicable duties. (St. Maarten: USD $5 per pound and USD $5 handling).`,
-          },
-          {
-            imgSrc: '/wtech/c-card.png',
-            title: 'USE OF CREDIT CARDS',
-            description: `If you need us to, we can place your orders online using 
-        our credit card for a fee of $10 (St. Maarten: USD $5) per order.`,
-          },
-          {
-            imgSrc: '/wtech/ctruck.png',
-            title: 'PACKAGE DELIVERY',
-            description: `If you have a busy schedule and you are not able to pick 
-        up your packages at one of our office locations, we can deliver your 
-        packages to your home or office.`,
-          },
-        ].map((service, index) => (
-          <div key={index} className='flex flex-col h-full p-4 gap-2'>
-            <div className='flex justify-center mb-4'>
-              <Image
-                src={service.imgSrc}
-                width={84}
-                height={84}
-                alt={service.title}
-              />
+    <section className='py-16'>
+      <div className='container max-w-full px-4 md:px-6'>
+        <div className='text-center mb-10'>
+          <h2 className='text-3xl font-bold tracking-tight text-[#0A4590]'>
+            Our Services
+          </h2>
+          <p className='text-muted-foreground mt-2'>
+            Comprehensive shipping solutions tailored to your personal needs.
+          </p>
+        </div>
+        <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+          <div className='gap-6 rounded-xl border border-gray-200 shadow'>
+            <div className='gap-2 flex flex-col space-y-1.5 p-6 pb-2'>
+              <Ship className='h-10 w-10 text-[#0A4590] mb-2' />
+              <h3 className='font-semibold leading-none tracking-tight'>
+                Personal Package Shipping
+              </h3>
             </div>
-            <h3 className='text-lg font-semibold text-center'>
-              {service.title}
-            </h3>
-            <p className='text-sm text-center'>{service.description}</p>
+            <div className='p-6 pt-0'>
+              <p>
+                Reliable and cost-effective shipping services for your personal
+                items and gifts to anywhere in the world.
+              </p>
+            </div>
           </div>
-        ))}
-      </div>
-      <div className='w-full flex justify-center mb-8'>
-        <button className='w-[150px] text-white h-[50px] px-2 rounded-lg bg-[#0A4590] hover:bg-[#F8721F] cursor-pointer'>
-          Request A Quote
-        </button>
+          <div className='gap-6 rounded-xl border border-gray-200 shadow'>
+            <div className='gap-2 flex flex-col space-y-1.5 p-6 pb-2'>
+              <Truck className='h-10 w-10 text-[#0A4590] mb-2' />
+              <h3 className='font-semibold leading-none tracking-tight'>
+                Home Pickup
+              </h3>
+            </div>
+            <div className='p-6 pt-0'>
+              <p className='text-muted-foreground'>
+                Convenient pickup service directly from your home with flexible
+                scheduling options.
+              </p>
+            </div>
+          </div>
+          <div className='gap-6 rounded-xl border border-gray-200 shadow'>
+            <div className='gap-2 flex flex-col space-y-1.5 p-6 pb-2'>
+              <Box className='h-10 w-10 text-[#0A4590] mb-2' />
+              <h3 className='font-semibold leading-none tracking-tight'>
+                Package Protection
+              </h3>
+            </div>
+            <div className='p-6 pt-0'>
+              <p>
+                Secure handling and insurance options to ensure your valuable
+                items arrive safely.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )

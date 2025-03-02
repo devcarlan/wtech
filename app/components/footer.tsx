@@ -1,79 +1,128 @@
-import { Container, CreditCard, Mail, MapPin, Phone } from 'lucide-react'
-import Image from 'next/image'
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Twitter,
+} from 'lucide-react'
+import Link from 'next/link'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
-  const islands = [
-    'St. Lucia',
-    'St. Kitts & Nevis',
-    'St. Maarten',
-    'Grenada',
-    'Barbados',
-    'St. Vincent',
-    'Dominica',
-    'Antigua',
-    'Guyana',
-  ]
   return (
-    <footer className='w-full pb-4 bg-[#24272D]'>
-      <div className='flex items-baseline gap-8 p-6'>
-        <div className='flex items-center'>
-          <div className='flex flex-col gap-3'>
-            <h3 className='font-semibold'>U.S Address</h3>
-            <div className='flex'>
-              <MapPin className='mt-1 mr-2 w-[20px] h-[20px]' />
-              1708 NW 82nd Ave,
-              <br />
-              Doral, FL 33126
+    <footer className='bg-[#0A4590] text-white'>
+      <div className='container max-w-full px-4 md:px-6 py-12'>
+        <div className='grid gap-8 sm:grid-cols-2 md:grid-cols-4'>
+          <div>
+            <h3 className='text-lg font-semibold mb-4'>West Tech Shipping</h3>
+            <p className='text-white/80 mb-4'>
+              Providing reliable shipping solutions for individuals and
+              families.
+            </p>
+            <div className='flex space-x-4'>
+              <Link href='#' className='text-white hover:text-[#F8721F]'>
+                <Facebook className='h-5 w-5' />
+                <span className='sr-only'>Facebook</span>
+              </Link>
+              <Link href='#' className='text-white hover:text-[#F8721F]'>
+                <Twitter className='h-5 w-5' />
+                <span className='sr-only'>Twitter</span>
+              </Link>
+              <Link href='#' className='text-white hover:text-[#F8721F]'>
+                <Instagram className='h-5 w-5' />
+                <span className='sr-only'>Instagram</span>
+              </Link>
+              <Link href='#' className='text-white hover:text-[#F8721F]'>
+                <Linkedin className='h-5 w-5' />
+                <span className='sr-only'>LinkedIn</span>
+              </Link>
             </div>
-            <div className='flex items-center'>
-              <Phone className='mr-2 w-[20px] h-[20px]' />
-              (321) 300-6468
-            </div>
-            <div className='flex items-center'>
-              <Mail className='mr-2 w-[20px] h-[20px]' />
-              info@westtechshipping.com
-            </div>
-          </div>
-        </div>
-        <div className='flex flex-col gap-3'>
-          <div className='flex items-center'>
-            <Container className='mr-2 w-[20px] h-[20px]' /> Islands We Ship To:
           </div>
           <div>
-            {islands.map((isle, i) => (
-              <p key={i}>{isle}</p>
-            ))}
+            <h3 className='text-lg font-semibold mb-4'>Services</h3>
+            <ul className='space-y-2'>
+              <li>
+                <Link href='#' className='text-white/80 hover:text-[#F8721F]'>
+                  Personal Package Shipping
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='text-white/80 hover:text-[#F8721F]'>
+                  Home Pickup
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='text-white/80 hover:text-[#F8721F]'>
+                  Package Protection
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='text-white/80 hover:text-[#F8721F]'>
+                  Gift Shipping
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='text-white/80 hover:text-[#F8721F]'>
+                  International Shipping
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className='text-lg font-semibold mb-4'>Quick Links</h3>
+            <ul className='space-y-2'>
+              <li>
+                <Link href='#' className='text-white/80 hover:text-[#F8721F]'>
+                  Track Shipment
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='text-white/80 hover:text-[#F8721F]'>
+                  Request Quote
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='text-white/80 hover:text-[#F8721F]'>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='text-white/80 hover:text-[#F8721F]'>
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='text-white/80 hover:text-[#F8721F]'>
+                  FAQ
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className='text-lg font-semibold mb-4'>Contact Info</h3>
+            <ul className='space-y-2'>
+              <li className='flex items-start gap-2'>
+                <Phone className='w-5 h-5' />
+                <span className='text-white/80'>(321) 300-6468</span>
+              </li>
+              <li className='flex items-start gap-2'>
+                <Mail className='w-5 h-5' />
+                <span className='text-white/80'>info@westtechshipping.com</span>
+              </li>
+              <li className='flex items-start gap-2'>
+                <MapPin className='w-5 h-5' />
+                <span className='text-white/80'>
+                  1708 NW 82nd Ave, Doral, FL 33126
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
-        <div className='flex flex-col gap-3'>
-          <div className='flex items-center'>
-            <CreditCard className='mr-2 w-[20px] h-[20px]' /> Cards We Accept:
-          </div>
-          <div className='flex items-center gap-4'>
-            <Image
-              width={40}
-              height={40}
-              src='/wtech/visa.png'
-              alt='Visa Credit Card'
-            />
-            <Image
-              width={40}
-              height={40}
-              src='/wtech/master-card.png'
-              alt='Master Card Credit Card'
-            />
-            <Image
-              width={40}
-              height={40}
-              src='/wtech/american.png'
-              alt='American Express Credit Card'
-            />
-          </div>
+        <div className='mt-12 pt-8 border-t border-white/20 text-center text-white/60'>
+          <p>© {currentYear} West Tech Shipping. All rights reserved.</p>
         </div>
-      </div>
-      <div className='flex justify-center'>
-        &copy; {currentYear} West Technology Group Inc., All rights reserved.
       </div>
     </footer>
   )

@@ -1,4 +1,5 @@
 import Choose from './components/choose'
+import Contact from './components/contact'
 import Hero from './components/hero'
 import Services from './components/services'
 import Ship from './components/ship'
@@ -11,6 +12,7 @@ export default function Home() {
         <Services />
         <Choose />
         <Ship />
+        <Contact />
       </main>
     </div>
   )

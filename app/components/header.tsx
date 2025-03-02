@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Header = () => {
   const nav = [
@@ -12,28 +13,53 @@ const Header = () => {
     'Sign Up',
   ]
   return (
-    <div className='w-full flex justify-between items-center p-4'>
-      <div>
-        <Image
-          src='/wtech/wtechlogo.png'
-          alt='West Tech Logo'
-          width={300}
-          height={55}
-        />
+    <header className='sticky top-0 z-50 w-full border-b bg-white'>
+      <div className='container max-w-full flex h-16 items-center py-2 px-4 md:px-6'>
+        <Link href='/'>
+          <Image
+            src='/wtechlogo.png'
+            alt='West Tech Logo'
+            width={300}
+            height={55}
+          />
+        </Link>
+        <nav className='hidden md:flex ml-auto gap-6'>
+          <Link
+            href='#'
+            className='text-sm font-semibold transition-colors hover:text-[#F8721F]'
+          >
+            Home
+          </Link>
+          <Link
+            href='#'
+            className='text-sm font-semibold transition-colors hover:text-[#F8721F]'
+          >
+            Services
+          </Link>
+          <Link
+            href='#'
+            className='text-sm font-semibold transition-colors hover:text-[#F8721F]'
+          >
+            WestTechTV
+          </Link>
+          <Link
+            href='#'
+            className='text-sm font-semibold transition-colors hover:text-[#F8721F]'
+          >
+            About Us
+          </Link>
+          <Link
+            href='#'
+            className='text-sm font-semibold transition-colors hover:text-[#F8721F]'
+          >
+            Contact
+          </Link>
+        </nav>
+        <button className='flex items-center justify-center ml-6 w-36 h-12 p-4 rounded-md text-white font-semibold border shadow-sm  bg-[#0A4590] hover:bg-[#0A4590]/90 cursor-pointer'>
+          Get a Quote
+        </button>
       </div>
-      <nav>
-        <ul className='list-none flex gap-4'>
-          {nav.map((li, i) => (
-            <li
-              key={i}
-              className='text-l text-[#0A4590] hover:text-[#F8721F] cursor-pointer'
-            >
-              {li}
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </div>
+    </header>
   )
 }
 

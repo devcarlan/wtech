@@ -5,11 +5,10 @@ import Services from './components/services'
 
 export default function Home() {
   return (
-    <>
-      <Hero />
-      <Services />
-      <FAQ />
-      <Footer />
-    </>
+    <div className='flex min-h-screen flex-col'>
+      <main className='flex-1'>
+        <Hero />
+      </main>
+    </div>
   )
 }
